@@ -10,6 +10,7 @@ The game can be opened while working offline but the fonts for the cards and the
 A minimized version is include. The game is completely encapsulated in a single file in that minimized version.
 
 Author: Alan Lara
-Email: halanlara@yahoo.com
-Date: 01/15/2015
 
+Email: halanlara@yahoo.com
+
+Date: 01/15/2015
