@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+   <title>Jacks or Better</title>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<header class="page">JACKS OR BETTER</header>
+	
+	<article class="page">
+		
+		<section class="form">
+			
+			<b>Fill the options to start playing</b>
+			
+			<blockquote>
+				
+				<div class="box">
+					
+					<label for="amount">Amount:&nbsp;</label>
+					<input type="text" id="amount" value="100" maxlength="5"> <b>BTC</b>
+					
+					<br /><br />
+					
+					<label for="credits">Credits: &nbsp;</label>
+					<input type="text" id="credits" value="100" maxlength="5">
+					
+					<button type="button" id="start" class="columnright link">START PLAYING</button>
+					
+				</div>
+								
+			</blockquote>
+			
+			<b>Example</b>
+			
+			<blockquote>100 btc as 100 credits = 1 btc each bet</blockquote>
+			
+		</section>
+		
+		<section class="screen hide"></section>
+		
+	</article>
+	
+	<footer class="page"></footer>
+	
+</body>
+</html>

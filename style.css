@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* _global */
+
+body{
+	margin: 25px;
+	background: #fff;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+header{
+	padding: 20px;
+	background: #000;
+	font: bold 25px "Arial";
+	color: #fff;
+}
+
+article{
+	height: 480px;
+	border: 1px solid #333;
+	overflow: hidden;
+}
+
+footer{
+	padding: 20px;
+	height: 18px;
+	background: #000;
+	font: bold 13px "Tahoma";
+	color: #fff;
+}
+
+input{
+	width: 50px;
+	margin: -1px 0;
+	padding: 3px 0 3px 0;
+	border: 1px solid #333;
+	font: 12px Arial;
+	text-align: center;
+}
+
+button{
+	padding: 5px 25px 5px 25px;
+	font: bold 14px "Tahoma";
+}
+
+table{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	background: #000064;
+	border: 2px solid #ffff00;
+	border-right: none;
+}
+
+td{
+	padding: 0 2px 0 2px;
+	border-right: 2px solid #ffff00;
+	font: bold 19px "Arial";
+	color: #ffff00;
+	line-height: 21px;
+	letter-spacing: .7px;
+}
+
+a{
+	text-decoration: underline;
+	font: 13px "Verdana";
+	color: #ffff00;
+}
+
+a:hover{
+	color: #0406FF;
+}
+
+/* elements */
+
+.page{
+	margin: auto;
+	width: 680px;
+}
+
+.form{
+	padding: 20px;
+	font: 14px "Arial";
+}
+
+.form .box{
+	padding: 20px;
+	border: 1px solid #333;
+}
+
+.screen{
+	padding: 2px;
+	min-height: 478px;
+	background: #00019f;
+}
+
+.screen .labels{
+	width: 218px;
+}
+
+.screen .bets{
+	width: 76px;
+	text-align: right;
+}
+
+.screen .max{
+	width: 116px;
+}
+
+.screen .selected{
+	background: #b00000;
+}
+
+.screen .panel{
+	margin: 3px 5px 0 5px;
+	width: 125px;
+}
+
+.screen .led{
+	margin: auto;
+	width: 42px;
+	background: #fce200;
+	border: 2px solid #ff0000;
+	border-radius: 4px;
+	font: bold 14px "Arial";
+	text-align: center;
+}
+
+.screen .card{
+	margin-top: 3px;
+	height: 170px;
+	border: 5px solid #fff;
+	border-radius: 8px;
+}
+
+.screen .back{
+	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAhElEQVQYV2P8lZj4n23+fEYGIPjl6Pif1dubgbGkBMx/ISDwHyIBVMTw4AED2/79YP7/np7/L1taGCQ+fGCE62RQUGCAmQTSKV5TAzaJEWQsTCfIpHfr14N1wkxiBBmHbKdQYCDcJJBmDDvR3QR3LcxOmG9gbmIEOQjZzt9bt8J9A3ITAMY7Wlye91LxAAAAAElFTkSuQmCC) repeat;
+}
+
+.screen .front{
+	background: #fff;
+}
+
+.screen .sign{
+	margin-left: 10px;
+	height: 40px;
+	font: bold 40px "Poiret One";
+}
+
+.screen .suite{
+	margin-top: -10px;
+	font: 100px "Century Gothic";
+	text-align: center;
+}
+
+.screen .report{
+	margin: 0 6px 0 16px;
+	font: 25px "Audiowide";
+	color: #aa0000;
+	text-shadow: -1px -1px 0 #ffe500, 1px -1px 0 #ffe500, -1px 1px 0 #ffe500, 1px 1px 0 #ffe500;
+}
+
+.screen .info{
+	margin: 13px 0 0 27px;
+	font: bold 18px "Arial";
+	color: #fff;
+	letter-spacing: .5px;
+}
+
+.screen .buttonbig{
+	margin: 4px 10px 0;
+	padding: 2px;
+	width: 90px;
+	background: #e0c820;
+	border: 1px solid #000;
+	border-radius: 4px;
+	outline: 0;
+}
+
+.screen .buttonsmall{
+	margin-right: 20px;
+	padding: 2px;
+	width: 50px;
+	background: -webkit-linear-gradient(#000, #444);
+	background: linear-gradient(#000, #444);
+	border: 1px solid #000;
+	border-radius: 3px;
+	outline: 0;
+}
+
+.screen .buttonbig > div{
+	padding: 3px;
+	border: 2px outset #eee182;
+	font: bold 15px "Arial";
+	text-align: center;
+}
+
+.screen .surface{
+	padding: 3px 0 3px 0;
+	border-radius: 3px;
+	font: bold 14px "Arial";
+	text-align: center;
+	line-height: 15px;
+}
+
+.screen .active{
+	background: -webkit-linear-gradient(#eee, #ccc);
+	background: linear-gradient(#eee, #ccc);
+	text-shadow: 1px 2px 1px #aaa;
+}
+
+.screen .disable{
+	background: #666;
+	cursor: default;
+}
+
+.screen .disable > div{
+	border-color: #666;
+	color: #666;
+}
+
+.screen .inactive{
+	background: -webkit-linear-gradient(#f6f6fa, #535454);
+	background: linear-gradient(#f6f6fa, #535454);
+	text-shadow: 1px 2px 1px #fff;
+	cursor: default;
+}
+
+/* tools */
+
+.columnleft{float: left;}
+.columnright{float: right;}
+.columnclear{clear: both;}
+
+.link{cursor: pointer;}
+
+.hide{display: none;}
+.invisible{visibility: hidden;}
+
+.black{color: #000;}
+.white{color: #fff;}
+.red{color: #F20000;}
+.green{color: #008000;}
+
+.jump{height: 3px;}
