@@ -29,7 +29,8 @@ $(document).ready(function() {
 		this.bet = 1,
 		this.hand = 0,
 		this.blinking = 0,
-		this.addition = 0
+		this.addition = 0,
+		this.serie = ""
 		
 	}
 	
@@ -215,7 +216,6 @@ $(document).ready(function() {
 				
 				var panels, rand, sign, suite, color;
 				var timer = 0, counter = 0;
-				var serie = "";
 				var action = dom.play.html();
 				
 				app.reset(["BET", "PLAY", "WIN", "CARDS", "LINE", action == "DEAL" ? "COVER" : "", action == "DEAL" ? "LED" : ""], ["off", "off", "off", "off", "off"]);
@@ -239,6 +239,8 @@ $(document).ready(function() {
 							
 							clearInterval(timer);
 							
+							if(action != "DEAL") {vars.serie = "";}
+							
 							dom.play.html(action == "DEAL" ? "DRAW" : "DEAL");
 							
 							app.toAnalyze();
@@ -254,9 +256,9 @@ $(document).ready(function() {
 								color = cons.COLORS[rand];
 								
 							}
-							while(serie.indexOf(sign + "_" + suite + ",") >= 0);
+							while(vars.serie.indexOf(sign + "_" + suite + ",") >= 0);
 							
-							serie += (sign + "_" + suite + ",");
+							vars.serie += (sign + "_" + suite + ",");
 							
 							switch(sign) {
 								
@@ -267,7 +269,7 @@ $(document).ready(function() {
 								
 							}
 							
-							panels.eq(counter++).parent().find("div.card").removeClass("back").addClass("front " + color).
+							panels.eq(counter++).parent().find("div.card").removeClass("back front black red").addClass("front " + color).
 							html("<div class='sign'>" + sign + "</div><div class='suite'>&#98" + suite + ";</div>");
 							
 						}
